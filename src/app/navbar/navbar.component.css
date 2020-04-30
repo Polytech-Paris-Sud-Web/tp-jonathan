@@ -1,0 +1,21 @@
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 35px;
+    background: rgb(76,176,80);
+    border-bottom: 1px solid white;
+}
+
+#navbar a {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+.active {
+    color: blueviolet !important;
+    pointer-events: none;
+}

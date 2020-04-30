@@ -1,0 +1,11 @@
+<div id="mainContainer">
+<form id="formCreation" #formCreation="ngForm">
+  <p>Création de formulaire:</p>
+  <input name="title" type="text" placeholder="title" [(ngModel)]="newArticle.title" required>
+  <input name="content" type="text" placeholder="content" [(ngModel)]="newArticle.content" required>
+  <input name="authors" type="text" placeholder="authors" [(ngModel)]="newArticle.authors" required>
+  <button type="button" id="submitCreation" (click)="onSubmitNewArticle(formCreation)">Créer mon article</button>
+  <p *ngIf="success">Article créé, tu vas être redirigé dans 5 secondes</p>
+  <p *ngIf="error">{{error}}</p>
+</form>
+</div>
