@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ArticleService } from '../services/article.service';
-import { NgForm } from '@angular/forms';
 import { Article } from '../models/article';
 import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-article-creation',
@@ -36,6 +36,8 @@ export class ArticleCreationComponent implements OnInit {
           this.error = 'Il semble y avoir eu un problème, regarde ta console';
         }
       );
+    } else {
+      this.error = 'Tous les champs sont obligatoires';
     }
   }
 
