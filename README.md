@@ -1,27 +1,7 @@
-# SimpleApp
+# La migration, quel intérêt, pourquoi ?
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
+Migrer vers une nouvelle version, notamment dans l'écosystème Javascript, c'est un moyen de bénéficier des avantages d'une monter de version faites par l'éditeur de notre Framework/Outil, certaines optimisations sont effectués, performance, stabilité, simplicité, nouvelles features, et souvent cela bénéficie à la fois au développeur et au client qui utilise l'application.
 
-## Development server
+Si on prend par exemple l'arrivée de Ivy, le nouveau moteur de rendu de Angular depuis la v9, cela apporte à la fois une amélioration pour le développeur (meilleure gestion des erreurs), mais aussi une amélioration de la taille du bundle, et donc un meilleur chargement en production du produit pour l'utilisateur.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+L'outil s'améliore, le produit aussi, que ce soit au niveau de la productivité du développeur ou au niveau des corrections apportées.
