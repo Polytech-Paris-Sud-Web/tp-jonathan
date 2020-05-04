@@ -1,3 +1,13 @@
-<div *ngFor="let article of this.articles() | async">
+<div id="filter">
+  <p>Filtre:</p>
+  <select [(ngModel)]="selectedValue" (change)="filterByCollection()">
+    <option *ngFor="let choiceItem of listOptions" [value]="choiceItem.id">
+        {{choiceItem.value}}
+    </option>
+</select>
+<input *ngIf="selectedValue != 0" [(ngModel)]="textToFilter" (ngModelChange)="search$.next(textToFilter)" type="text"
+placeholder="Rechercher une collection">
+</div>
+<div *ngFor="let article of articlesFiltered; trackBy: trackById">
   <app-article  [article]="article" (deletedArticle)="delete($event)"></app-article>
 </div>

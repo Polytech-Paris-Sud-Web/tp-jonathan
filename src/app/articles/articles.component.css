@@ -1,0 +1,17 @@
+#filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#filter > * {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#filter input {
+    width: 250px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    color: black;
+}
